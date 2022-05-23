@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Conferencia Bs As</title>
+</head>
+<body>
+<div class="container-xxl">
+  <!---Navegador Superior-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">  
+  <div class="container-fluid">    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+     aria-expanded="false" aria-label="Toggle navigation" style="color:rgb(159, 168, 173); background-color: rgb(68, 68, 71);">
+      <span class="navbar-toggler-icon navbar-ligth"></span>
+    </button>
+    <a class="navbar-brand" href="#"></a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03"style="text-end">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active " style="color:white;" aria-current="page" href="Index.html"><h4>Conf Bs As</h4></a>
+        </li>
+      </ul>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">La Conferencia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Los oradores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">El lugar y la fecha</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"style="color:white;" href="Index.html">Conviertete en orador</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " style="color:rgb(34, 148, 21);" href="compraTicket.html">Comprar tickets</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- tarjetas de bonificacion -->
+<br>
+<div class="mx-auto" style="width: 60%;">
+  <div class="card-group">  
+    <div class="card">
+      <div class="card border-success me-1">      
+        <div class="card-body text-success text-center">
+          <h5 class="card-title">Estudiante</h5>
+          <p class="card-text">Tienen un descuento</p>
+          <p class="card-text"><b> 80 %</b></p>
+          <p class="card-text">* Presentar documentación</p>
+        </div>
+      </div>
+    </div>
+    <div class="card px-0">
+      <div class="card border-primary mb-0" >      
+        <div class="card-body text-primary text-center">
+          <h5 class="card-title">Trainee</h5>
+          <p class="card-text">Tienen un descuento</p>
+          <p class="card-text"><b> 50 %</b></p>
+          <p class="card-text">* Presentar documentación</p>
+        </div>
+      </div>
+    </div>
+    <div class="card px-0">
+      <div class="card border-warning ms-1">      
+        <div class="card-body text-danger text-center">
+          <h5 class="card-title">Junior</h5>
+          <p class="card-text">Tienen un descuento</p>
+          <p class="card-text"><b> 15 %</b></p>
+          <p class="card-text">* Presentar documentación</p>
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>
+<!-- Titulo -->
+<p class="text-center">VENTA 
+  <h2 class="text-center">VALOR DE TICKET $200</h2>  
+</p>
+<!-- Formulario -->
+<form class="mx-auto" style="width: 60%;">
+  <div class="row">
+    <div class="col-6 ps-0">
+      <input type="text" class="form-control" placeholder="Nombre" aria-label="First name"name="Nombre">
+    </div>
+    <div class="col-6 pe-0">      
+      <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" name="Apellido">
+    </div>
+    <br>
+    <br>
+    <div class="col-12 px-0">
+      <input type="email" class="form-control" placeholder="email" name="email"id="exampleInputEmail1">
+    </div>
+    <br>
+    <div class="col-6 ps-0"><br>
+     Cantidad<input type="number" class="form-control" placeholder="Cantidad" aria-label="Last name" id="InputCantidad"name="InputCantidad">
+    </div>
+    <br>
+    <div class="col-6 pe-0"><br>
+      Categoria<select id="InputCategoria" class="form-select" aria-label="Default select example" >
+        <option selected value="80">Estudiante</option>
+        <option value="50">Trainee</option>
+        <option value="15">Junior</option>        
+      </select>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Botones -->  
+    <div class="col-12 px-0">
+      <input type="text" id="CompraTotal" class="alert alert-primary" value="Total a Pagar: $" role="alert" readonly style="width:100%;"></input>    
+    </div> 
+    <div class="col-6 ps-0">
+      <button class="btn text-white w-100" type="reset" style="background-color:#8DB600;" name="Borrar">Borrar</button>
+    </div> 
+    <div class="col-6 pe-0">
+      <button class="btn text-white w-100" type="button" onclick="resumir()" style="background-color:#8DB600;" name="Resumen">Resumen</button>
+    </div>  
+  </div> 
+</form>
+
+  <br>
+  <br>   
+<!---Navegador Inferior-->
+<nav style="background-color:#1b4c63;">
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link" style="color:white;"  href="#">Preguntas frecuentes </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link"style="color:white;" href="#">Contactanos </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" style="color:white;" href="#">Prensa </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link "style="color:white;"href="#">Conferencias </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link "style="color:white;"href="#">Términos y condiciones </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link "style="color:white;"href="#">Privacidad </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link "style="color:white;"href="#">Estudiantes </a>
+  </li>
+</ul>
+</nav>
+
+
+</div>
+    
+  <script src="js/js01.js"></script>
+ 
+
+     <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    
+</body>
+</html>
